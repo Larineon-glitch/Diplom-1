@@ -1,15 +1,10 @@
 class Bun:
-    """
-    Модель булочки для бургера.
-    Булочке можно дать название и назначить цену.
-    """
-
-    def __init__(self, name: str, price: float):
+    def __init__(self, name, price):
         self.name = name
         self.price = price
 
-    def get_name(self) -> str:
+    def get_name(self):
         return self.name
 
-    def get_price(self) -> float:
+    def get_price(self):
         return self.price

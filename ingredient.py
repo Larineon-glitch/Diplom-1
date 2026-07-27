@@ -1,20 +1,14 @@
 class Ingredient:
-    """
-    Модель ингредиента.
-    Ингредиент: начинка или соус.
-    У ингредиента есть тип (начинка или соус), название и цена.
-    """
-
-    def __init__(self, ingredient_type: str, name: str, price: float):
+    def __init__(self, ingredient_type, name, price):
         self.type = ingredient_type
         self.name = name
         self.price = price
 
-    def get_price(self) -> float:
-        return self.price
+    def get_type(self):
+        return self.type
 
-    def get_name(self) -> str:
+    def get_name(self):
         return self.name
 
-    def get_type(self) -> str:
-        return self.type
+    def get_price(self):
+        return self.price
